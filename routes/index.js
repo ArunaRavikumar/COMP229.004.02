@@ -9,18 +9,7 @@ var express = require('express');
 var router = express.Router();
 
 let userController = require('../controller/userCollection');
-/* GET home page. */
-router.get('/',function(req, res, next) {
-  res.render('index', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME',
-    business: 'BUSINESS CONTACTS'
-  });
-});
+
 // get about page
 router.get('/', about);
 function about(req, res, next) {
@@ -31,7 +20,8 @@ function about(req, res, next) {
     projects: 'PROJECTS',
     service: 'SERVICE PAGE',
     contact:'CONTACT ME',
-     business: 'BUSINESS CONTACTS'
+     business: 'BUSINESS CONTACTS',
+     login: 'Login',
   });
 }
 // get projects page
@@ -44,7 +34,8 @@ function projects(req, res, next) {
     projects: 'PROJECTS',
     service: 'SERVICE PAGE',
     contact:'CONTACT ME',
-    business: 'BUSINESS CONTACTS'
+    business: 'BUSINESS CONTACTS',
+    login: 'Login',
   });
 }
 // get service page
@@ -57,7 +48,8 @@ function service(req, res, next) {
     projects: 'PROJECTS',
     service: 'SERVICE PAGE',
     contact:'CONTACT ME',
-    business: 'BUSINESS CONTACTS'
+    business: 'BUSINESS CONTACTS',
+    login: 'Login',
   });
 }
 // get contact page
@@ -69,9 +61,11 @@ router.get('/',function(req, res, next) {
     projects: 'PROJECTS',
     service: 'SERVICE PAGE',
     contact:'CONTACT ME',
-    business: 'BUSINESS CONTACTS'
+    business: 'BUSINESS CONTACTS',
+    login: 'Login',
   });
 });
+
 // get business page
 router.get('/userData/business', userController.UserCollectionList);
 router.get('/userData/businessEdit', userController.UserCollectionList);

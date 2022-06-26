@@ -117,7 +117,7 @@ module.exports.processEditPage = (req, res, next) => {
         else
         {
           
-            res.redirect('/userData/businessEdit');
+            res.redirect('/userData/business');
         }
     });
 }
@@ -134,7 +134,7 @@ module.exports.performDelete = (req, res, next) => {
         else
         {
             // refresh the book list
-            res.redirect('/userData/businessEdit');
+            res.redirect('/userData/business');
         }
     });
 
