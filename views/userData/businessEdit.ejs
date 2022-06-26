@@ -1,0 +1,50 @@
+<!-- About page
+ 
+Name: Aruna Ravi Kumar
+ID: 301243154
+Date: 06-04-2022
+-->
+<%- include('../partials/header.ejs') %> <!-- partial file header connected-->
+<div class="row">
+    <br>
+    <br>
+    <h1><%= title %></h1>
+    <br>
+   <br>
+   <br>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+            <!-- Header Row-->
+            <tr>
+                <th class="text-center">Contact Name</th>
+                <th class="text-center">Contact Number</th>
+                <th class="text-center">Email Address</th>
+               
+            </tr>
+
+            <!-- Repeatable Template Row -->
+
+            <% for(let count = 0; count < UserCollectionList.length; count++) { %>
+                <tr>
+                    <td class="text-center"><%= UserCollectionList[count].name %></td>
+                    <td class="text-center"><%= UserCollectionList[count].phNum %></td>
+                    <td class="text-center"><%= UserCollectionList[count].email %></td>
+                  
+                        <td class="text-center">
+                            <a href="/userData/edit/<%= UserCollectionList[count]._id %>" class="btn btn-primary btn-sm">
+                            Edit</a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/userData/delete/<%= UserCollectionList[count]._id %>" class="btn btn-danger btn-sm">
+                           Delete</a>
+                        </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+    <h2>Note: Login to Edit/Delete the Details </h2>
+    <a href="/userData/businessEdit"><button class="resume-btn" type="submit" name="button"></button>Edit</button> </a> 
+</div>
+</div>
+    <%- include('../partials/footer.ejs') %> <!-- partial file header connected-->

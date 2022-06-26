@@ -1,0 +1,36 @@
+{
+  "name": "comp229004",
+  "version": "6.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.8",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^6.4.0",
+    "morgan": "~1.9.1",
+    "passport": "^0.6.0"
+  },
+  "description": "Assignment1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArunaRavikumar/COMP229.004.01.git"
+  },
+  "keywords": [
+    "comp229",
+    "nodejs",
+    "express",
+    "MEAN"
+  ],
+  "author": "Aruna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArunaRavikumar/COMP229.004.01/issues"
+  },
+  "homepage": "https://github.com/ArunaRavikumar/COMP229.004.01#readme"
+}

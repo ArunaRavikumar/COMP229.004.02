@@ -1,0 +1,42 @@
+/* This is css file of my project 
+Name: Aruna Ravi Kumar
+ID: 301243154
+Date: 06-04-2022
+*/
+
+body {
+  padding: 50px;
+  font: 20px  Georgia, Serif;
+  background-image: url('/images/background.jpeg');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ 
+  font-weight: bold;
+}
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+  font: 20px  Georgia, Serif;
+}
+nav {
+  font-weight: bold;
+
+}
+.text-white{
+  color: black;
+}
+div{
+  text-align: center;
+ 
+}
+input{
+  width:500px; height:30px;
+
+}
+p{
+  font:"30px";
+}
